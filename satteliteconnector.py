@@ -23,6 +23,7 @@ def create_satellite():
     for i in range(0,number_of_satellite):
         sat = Actor('sattelite')
         sat.pos = randint(50,WIDTH-50),randint(50,HEIGHT-50)
+        # Part 2
         satellites.append(sat)
     starttime = time()
 
@@ -42,7 +43,7 @@ def draw():
         screen.draw.text(str(round(total_time,2)),(350,450),fontsize = 20)
     else:
         screen.draw.text(str(round(total_time,2)),(350,450),fontsize = 20)
-
+# Part 3
 def on_mouse_down(pos):
     global next_satellite, lines
     if next_satellite <  number_of_satellite:
